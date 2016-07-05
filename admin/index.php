@@ -49,8 +49,6 @@ if (isset($_POST['login'])){
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" href="font/font-awesome/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script type="text/javascript" src="js/modalbox.js"></script>
-    <script type="text/javascript" src="js/modalbox.js"></script>
 </head>
 <body>
     <div class="login-container">
@@ -80,35 +78,18 @@ if (isset($_POST['login'])){
                     <input class="btn btn-block" type="submit" name="login" value="Login">
                     <em>-or-</em>
                 </form>
-                <button class="btn btn-block btn-info" onclick="show_modal('admin_reg')">Register</button>
+                <a href="../index.php" class="btn btn-block btn-info" target="_blank">www.rsmt.ac.in</a>
                 <div class="forget-div">   
                     <a href="#">Forgot your password?</a>
                 </div>    
             </div>
         </div>
-        <div class="closeable modal top" id="admin_reg">
-            <div class="modal-content">
-                <span class="close-btn" onclick="close_modal('admin_reg')"></span>
-                <div class="modal-body">
-                    <h2 style="margin:5px 0 15px 0;">RSMT</h2>
-                   <form method="post" id="admin_reg">
-                        <div class="input-group">
-                            <span class="input-icon"><i class="fa fa-share"></i></span>
-                            <input class="form-input" type="password" placeholder="Enter Special ID" required>
-                        </div>   
-                        <div class="input-group">
-                            <span class="input-icon"><i class="fa fa-envelope"></i></span>
-                            <input class="form-input" type="email" placeholder="Enter Email Address" required>
-                        </div>
-                        <div class="input-group">
-                            <span class="input-icon"><i class="fa fa-unlock"></i></span>
-                            <input class="form-input" type="password" placeholder="Enter Password" required>
-                        </div>
-                        <input type="submit" class="btn btn-lg btn-block btn-success" value="Register">
-                    </form>
-                </div>
-            </div>
-        </div>
     </div>
 </body>
+<script>
+    function close_div(el) {
+        el.parentNode.style.opacity = 0;
+        setTimeout(function () { el.parentNode.style.display = "none"; }, 500);
+    }    
+</script>
 </html>
