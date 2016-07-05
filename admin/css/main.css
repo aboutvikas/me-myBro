@@ -1,0 +1,545 @@
+/**********************************************************/
+/************************* Setting ************************/
+/**********************************************************/
+.col-1 {
+    display: block;
+    float: left;
+    margin: 1% 0;
+    width: 100%;
+}
+
+.col-2 {
+    display: block;
+    float: left;
+    margin: 1% 0 1% 2%;
+    width: 66%;
+}
+
+.col-3 {
+    display: block;
+    float: left;
+    margin: 1% 0 1% 2%;
+    width: 32%;
+}
+
+.col-4 {
+    display: block;
+    float: left;
+    margin: 1% 0 1% 2%;
+    width: 42%;
+}
+
+.col-5 {
+    display: block;
+    float: left;
+    margin: 1% 0 1% 2%;
+    width: 56%;
+}
+
+.col-6 {
+    display: block;
+    float: left;
+    margin: 1% 0 1% 2%;
+    width: 23.5%;
+}
+
+.col-7 {
+    display: block;
+    float: left;
+    margin: 1% 0 1% 2%;
+    width: 49%;
+}
+
+.col-1:first-child,.col-2:first-child,.col-3:first-child,.col-4:first-child,.col-5:first-child,.col-6:first-child,.col-7:first-child {
+    margin-left: 0;
+}
+
+.col-1::before,.col-2::before,.col-3::before,.col-4::before,.col-5::before,.col-6::before,.col-7::before,
+.col-1::after,.col-2::after,.col-3::after,.col-4::after,.col-5::after,.col-6::after,.col-7::after {
+    content: "";
+    display: table;
+}
+
+.col-1::after,.col-2::after,.col-3::after,.col-4::after,.col-5::after,.col-6::after,.col-7::after {
+    clear: both;
+}
+
+.flex-col {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    margin-bottom: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,::before,::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica,Arial,sans-serif;
+}
+
+section {
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+.container {
+    width: 1150px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.clearfix {
+    clear: both;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    font-size: 14px;
+    display: block;
+    font-weight: 400;
+    color: #555;
+    line-height: 20px;
+}
+
+form {
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+}
+
+/******************* CSS Library *************************/
+.fa {
+    margin-right: 8px;
+    font-size: 14px !important;
+}
+
+.error,.success {
+    border: 1px solid;
+    padding: 12px 8px;
+    border-radius: 4px;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    margin-bottom: 10px;
+}
+
+.error,.error p {
+    color: #A94442 !important;
+    background-color: #F2DEDE;
+    text-align: center;
+    font-size: 14px;
+}
+
+.error::before {
+    content: "Error:";
+    font-weight: 700;
+    margin-right: 5px;
+}
+
+.success,.success p {
+    color: #538753 !important;
+    background-color: #DFF0D8;
+    text-align: center;
+    font-size: 14px;
+}
+
+.error p,.success p {
+    margin: 5px 0;
+    font-size: 12px;
+}
+
+.success::before {
+    content: "Success!";
+    font-weight: 700;
+    margin-right: 5px;
+}
+
+.close-btn {
+    color: #888;
+    float: right;
+    display: block;
+    transition: all .3s;
+    margin-right: 5px;
+}
+
+.close-btn::after {
+    content: '\2716';
+    clear: both;
+    font-size: 13px;
+}
+
+.close-btn:hover {
+    color: #111;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 16px;
+}
+.error .close-btn,.success .close-btn{
+    margin-top: -4px;
+}
+
+button {
+    overflow: visible;
+}
+
+.btn {
+    padding: 7px 14px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    outline: none;
+    margin-bottom: 0;
+    vertical-align: middle;
+    line-height: 14.5px;
+    cursor: pointer;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+
+.btn-default:hover {
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #4caf50;
+    border-color: #388e3c;
+}
+
+.btn-success:hover {
+    background-color: #449d44;
+    border-color: #398439;
+}
+
+.btn-warning {
+    color: #fff;
+    background-color: #ec971f;
+    border-color: #eea236;
+}
+
+.btn-warning:hover {
+    background-color: #ec971f;
+    border-color: #d58512;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}
+
+.btn-danger:hover {
+    background-color: #c9302c;
+    border-color: #ac2925;
+}
+
+.btn-info {
+    color: #fff;
+    background-color: #5bc0df;
+    border-color: #46b8db;
+}
+
+.btn-info:hover {
+    background-color: #31b0d6;
+    border-color: #269abd;
+}
+
+.disabled {
+    cursor: not-allowed;
+    opacity: .6;
+}
+
+.btn-xm {
+    padding: 2px 4px;
+    border-radius: 2px;
+    font-size: 12px;
+}
+
+.btn-sm {
+    padding: 5px 10px;
+    border-radius: 2px;
+    font-size: 12px;
+}
+
+.btn-md {
+    padding: 7px 14px;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.btn-lg {
+    padding: 11px 17px;
+    border-radius: 4px;
+    font-size: 17px;
+}
+
+.btn-block {
+    width: 100%;
+    display: block;
+}
+
+/* Modal Box CSS */
+.modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    background-color: rgba(0,0,0,0.4);
+    box-sizing: border-box;
+    opacity: 0;
+    transition: all .6s;
+    visibility: hidden;
+}
+
+.modal-content {
+    background-color: #fff;
+    min-width: 300px;
+    max-width: 500px;
+    width: 33%;
+    margin: auto;
+    margin-top: 8%;
+    box-sizing: border-box;
+    border: 1px solid #555;
+    overflow: hidden;
+    border-radius: 4px;
+    box-shadow: 0 0 3px #555;
+    text-align: center;
+}
+
+.modal-header,.modal-body,.modal-footer {
+    padding: 15px;
+    box-sizing: border-box;
+    color: #111;
+    min-height: 30px;
+}
+
+.modal-body {
+    border-top: 1px solid #dfdfdf;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.show-modal {
+    visibility: visible;
+}
+.modal-content.image{
+    margin-top: 2%;
+    width: auto;
+    max-width: 50vw;
+    max-height:93vh;
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
+}
+.modal-content.image img{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    border-radius: 4px;
+    object-fit: cover;
+}
+.modal-content.image .modal-body{
+    padding: 0;
+    border: none;
+}
+
+/*  modal animations start       */
+/*  fade,top,flip,left (Total-4) */
+/*  modal deafult animation */
+.show-modal.modal {
+    opacity: 1;
+}
+
+/* modal fade animation   */
+.fade.modal {
+    opacity: 0;
+    transition: all .5s;
+}
+
+.show-modal.fade.modal {
+    opacity: 1;
+}
+
+.fade.modal .modal-content {
+    opacity: 0;
+    margin-top: -60px;
+    transition: all .5s;
+}
+
+.show-modal.fade.modal .modal-content {
+    opacity: 1;
+    margin-top: 17px;
+}
+
+/* modal flip animation   */
+.flip.modal {
+    opacity: 0;
+    transition: all .4s;
+}
+
+.show-modal.flip.modal {
+    opacity: 1;
+}
+
+.flip.modal .modal-content {
+    transform: rotateX(180deg) scale(.5);
+    transition: transform .5s;
+}
+
+.show-modal.flip.modal .modal-content {
+    transform: rotateX(0deg);
+}
+
+/* modal left animations   */
+.left.modal {
+    opacity: 0;
+    margin-left: -350px;
+    transition: all .6s;
+}
+
+.show-modal.left.modal {
+    opacity: 1;
+    margin-left: 0;
+}
+
+/* modal top animation   */
+.top.modal {
+    margin-top: -400px;
+    opacity: 0;
+    transition: .4s;
+}
+
+.show-modal.top.modal {
+    margin-top: 0;
+    opacity: 1;
+}
+
+/* modal shaking animation   */
+.shake {
+    animation: shake .6s;
+}
+
+.shake1 {
+    animation: shake1 .6s;
+}
+
+@keyframes shake {
+    0%,100% {
+        transform: translateX(0);
+    }
+
+    10%,50%,90% {
+        transform: translateX(-6px);
+    }
+
+    30%,70% {
+        transform: translateX(6px);
+    }
+}
+
+@keyframes shake1 {
+    0%,100% {
+        transform: translateX(0);
+    }
+
+    10%,50%,90% {
+        transform: translateX(-6px);
+    }
+
+    30%,70% {
+        transform: translateX(6px);
+    }
+}
+
+/*  modal animations closed  */
+/* Modal Box CSS Closed!  */
+.input-group {
+    display: table;
+    border-collapse: separate;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.form-input {
+    display: block;
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 14px;
+    height: 40px;
+    outline: none;
+}
+
+.input-group .form-input {
+/*    border-radius: 0 3px 3px 0;*/
+    border: none;
+    display: table-cell;
+}
+
+.input-group .input-icon {
+    border-radius: 3px 0 0 3px;
+}
+
+.input-icon {
+    display: table-cell;
+    vertical-align: middle;
+    width: 1%;
+    white-space: nowrap;
+    background-color: #efefef;
+    padding: 6px 14px;
+    color: #333;
+    border-right: 1px solid #ccc;
+}
+
+/* Admin Panel CSS Code */
+.page-content .main-content {
+    padding: 20px;
+    overflow: auto;
+    background-color: #f5f5f5;
+}
+.page-title {
+    background-color: #fff;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border: 1px solid #ededed;
+}
+.page-title h3 {
+    font-weight: 400;
+    font-size: 20px;
+    margin: 10px 0;
+}

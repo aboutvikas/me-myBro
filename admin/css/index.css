@@ -1,0 +1,137 @@
+.fa {
+    margin-right: 0;
+}
+
+.login-header {
+    background-color: #373e4a;
+    padding: 30px 0;
+    transition: all 300ms ease-in-out;
+    position: relative;
+}
+
+.login-header:after {
+    content: '';
+    z-index: 2;
+    width: 0;
+    height: 0;
+    bottom: -13px;
+    border-width: 13px 12.5px 0;
+    border-style: solid;
+    border-color: #373e4a transparent transparent;
+    position: absolute;
+    left: 50%;
+    color: #fff;
+    overflow: auto;
+    margin-left: -12.5px;
+    transition: all 550ms ease-in-out;
+}
+
+.login-content {
+    margin: 0 auto;
+    padding: 20px 0;
+    width: 320px;
+    text-align: center;
+    transition: all 300ms ease-in-out;
+    position: relative;
+}
+
+.login-content h1 {
+    color: #f1f1f1;
+}
+
+.login-content p {
+    color: #999;
+}
+
+.login-content .error {
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+.login-content .error .close-btn {
+    margin-top: -3px;
+}
+
+.login-form {
+    padding-top: 40px;
+    background-color: #303641;
+    position: relative;
+    height: calc(100vh - 50px);
+    transition: all 550ms ease-in-out;
+}
+
+.login-form form {
+    transition: all 550ms ease-in-out;
+}
+
+.login-form .input-group {
+    border: none;
+}
+
+.login-form input {
+    height: 45px;
+}
+
+.login-form em {
+    color: #999;
+    display: block;
+    margin: 20px 0;
+    font-size: 12px;
+}
+
+.login-form .form-input {
+    background-color: #373e4a;
+    transition: all .5s ease-in-out;
+    font-size: 12px;
+    color: #afafaf;
+}
+
+.login-form input:focus {
+    color: #333;
+    background-color: #efefef;
+}
+
+.login-form .input-icon {
+    background-color: #373e4a;
+    border-color: #373e4a;
+    color: #afafaf;
+}
+
+.login-form input[type="submit"] {
+    background-color: #373e4a;
+    color: #fff;
+    transition: all .3s ease-in-out;
+}
+
+.login-form input[type="submit"]:hover {
+    color: #373e4a;
+    background-color: #f1f1f1;
+}
+
+.login-form .btn-info {
+    background-color: #009688;
+    border-color: #00796B;
+    color: #eee;
+    transition: .3s;
+    padding: 10px;
+}
+
+.login-form .btn-info:hover {
+    background-color: #00796B;
+}
+
+.forget-div a {
+    margin-top: 70px;
+    font-size: 12px;
+    color: #aaa;
+    display: block;
+}
+.forget-div a:hover {
+    color: #fff;
+}
+@media screen and (max-width: 320px) {
+    .login-form form,.login-form button{
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

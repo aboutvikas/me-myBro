@@ -1,0 +1,48 @@
+/********************** Content ***********************/
+
+.stu-welcome,.stu-details {
+    background-color: #fff;
+    padding: 15px;
+    
+}
+.stu-welcome {
+    text-align: center;
+}
+
+.stu-details {
+    overflow: auto;
+    padding-bottom: 3%;
+}
+
+.stu-details table {
+    border: 1px solid #111;
+    width: 60%;
+    border-spacing: 0;
+    border-radius: 3px;
+    font-size: 13px;
+}
+
+.stu-details td {
+    padding: 16px 10px;
+    white-space: nowrap;
+    margin: 0;
+}
+
+.stu-details td:nth-child(odd) {
+    font-weight: bold;
+}
+
+.stu-details tr {
+    border-bottom: 1px solid #ddd;
+    margin: 0;
+    transition: .3s;
+}
+
+.stu-details tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.stu-details tr:hover {
+    background-color: #443266;
+    color: #fff;
+}

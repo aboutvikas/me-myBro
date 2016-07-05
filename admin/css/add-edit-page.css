@@ -1,0 +1,178 @@
+.edit-form{
+    background-color: #fff;
+    padding:30px 20px;
+    padding-bottom: 30px;
+/*    margin-bottom: 10px;*/
+    border: 1px solid #ededed;
+    overflow: hidden;
+}
+.edit-form form:not(.sub-form){
+    background-color: #fff;
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 0 0 10px -3px #777;
+/*    border-radius: 2px;*/
+}
+.edit-form h3{
+    font-weight: 400;
+    text-align: center;
+    margin: 10px 0;
+}
+.edit-form input:not(.checkbox),.edit-form select{
+    display: block;
+    padding: 7px 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    outline: none;
+    font-size: 12px;
+    border: 1px solid lightgrey;
+}
+.add-std select:required:invalid{
+    color: #999;
+    cursor: pointer;
+}
+.add-std option{
+    color: #000;
+    font-size: 16px;
+}
+.edit-form select {
+    color: #444;
+    cursor: pointer;
+}
+.edit-form input:hover{
+    border: 1px solid #111;
+}
+.edit-form input:focus,
+.edit-form select:focus{
+    border:1px solid #2b303a;
+    color: #009688;
+    box-shadow: 0px 2px 2px 2px lightgrey;
+    transition: .7s;
+}
+.edit-form label{
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 5px;
+    margin-left: 2px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+}
+.edit-form input[type=submit]{
+    background-color: #2b303a;
+    color: #fff;
+    cursor: pointer;
+    line-height: 26px;
+    font-size: 1em;
+    border-radius: 3px;
+    margin: 0;
+    transition: .3s;
+}
+.edit-form input[type=submit]:hover{
+    background-color: white;
+    color: #2b303a;
+    border: 1px solid #2b303a;
+}
+.edit-form input:disabled,
+.edit-form select:disabled {
+    background: #dddddd;
+}
+.edit-form input:disabled:hover,
+.edit-form select:disabled:hover {
+    cursor: not-allowed;
+    border-color: lightgray;
+}
+.add-sub .edit-form{
+/*    padding: 20px;*/
+    height: 90vh;
+    text-align: center;
+}
+.add-sub form {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+.add-sub form input[type="text"],.add-sub form select {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #333 !important;
+    border-radius: 2px;
+    color: #111 !important;
+}
+.add-sub ::-webkit-input-placeholder {
+    color: #111;
+}
+.add-user input[type="file"] {
+    border: none;
+    padding: 0;
+    display: inline-block;
+}
+.add-user form {
+    width: 300px;
+    margin: 0 auto;
+}
+/* myAccount CSS */
+.user-profile{
+    padding:25px 0;
+    margin-bottom: 10px;
+    margin: 0 auto;
+    width: 300px;
+    text-align: center;
+}
+.user-img-back{
+    background-color: rgba(43, 48, 58, 0.95);
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+.user-img{
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 10px  solid rgb(70, 74, 84);
+    transition: .5s;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+.user-img img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+.user-img:hover {
+    border-radius: 10%;
+}
+.user-img label{
+    width: 200px;
+    height: 25px;
+    margin: 0;
+    line-height: 25px;
+    background-color: rgba(70, 74, 84, 0.75);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: rgba(241, 241, 241, 0.83);
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: 400;
+}
+.user-img input[type="file" i],.user-img input[type="file"] {
+    display: none;
+    border: none;
+    margin: 0;
+}
+.user-details h3{
+    color: rgba(241, 241, 241, 0.83);
+    font-weight: 400;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.user-details p{
+    color: rgba(241, 241, 241, 0.83);
+    margin: 0;
+}

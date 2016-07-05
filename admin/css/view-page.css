@@ -1,0 +1,120 @@
+/* View Form CSS */
+.view-form {
+    background-color: #fff;
+    padding: 20px 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ededed;
+    text-align: center;
+}
+.view-form h3 {
+    font-weight: 400;
+    font-size: 20px;
+}
+.view-form form {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.view-form form em {
+    margin: 15px 0;
+    display: block;
+    font-size: 12px;
+}
+.view-form form input:not(.btn),
+.view-form select{
+    display: block;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    font-size: 13px;
+    border: 1px solid #333;
+}
+.view-form input[type=submit]:not(.btn){
+    background-color: #2b303a;
+    border: 1px solid #333;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0;
+    transition: .3s;
+}
+.view-form input[type=submit]:hover{
+    background-color: white;
+    color: #2b303a;
+    border: 1px solid #2b303a;
+}
+.view-form .btn-lg{
+    font-size: 14px;
+    color: #999;
+}
+
+/*Table CSS*/
+.view-table {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ededed;
+    text-align: center;
+    overflow: auto;
+}
+.view-table h4{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.view-table table .fa {
+    margin-right: 0;
+}
+.view-table table{
+    border: 1px solid #2b303a;
+    width: 100%;
+    border-spacing: 0;
+    border-radius: 3px;
+    margin: 0 auto;
+    font-size: 12px;
+}
+.view-table table th {
+    padding: 15px 0;
+    white-space: nowrap;
+    min-width: 55px;
+    background-color: #2b303a;
+    color: #fff;
+}
+.view-table td {
+    padding: 10px 4px;
+    text-align: center;
+}
+.view-table .percent {
+    border: 1px solid #455a64;
+    font-style: normal;
+    font-weight: bold;
+    color: #f1f1f1;
+    background-color: #607d8b;
+    padding: 5.5px 0;
+    width: 43px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 2px;
+}
+.view-table .percent:hover{
+    background-color: #455a64;
+}
+.view-table tr{
+    border-bottom: 1px solid #ddd;
+    margin: 0;
+    transition: .2s;
+    border-radius: 3px;
+}
+.view-table tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+.view-table tr:hover{
+    background-color: #dfdfdf;
+}
+.view-table td img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #333;
+}

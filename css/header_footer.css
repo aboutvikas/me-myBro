@@ -1,0 +1,297 @@
+/********************** Header and Footer CSS ***********************/
+header,footer {
+    background-color: #443266;
+    color: #f5f5f5;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: #C6BADD;
+}
+
+header {
+    border-bottom: 4px solid #f27c66;
+    margin-bottom: 7px;
+}
+
+.link a {
+    text-decoration: none;
+    color: #C6BADD;
+}
+
+.link a:hover {
+    color: #9f79f2;
+}
+
+.link li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0 9px;
+    border-right: 1px #fff solid;
+    line-height: 11px;
+    font-size: .8em;
+}
+
+.link li:last-child {
+    border-right: none;
+    padding-right: 0;
+}
+
+.home {
+    padding: 3% 0;
+    text-align: center;
+}
+
+.header-left {
+    text-align: left;
+    padding: 3% 0;
+}
+
+.header-left p {
+    color: #C6BADD;
+    font-size: 13px;
+}
+
+.header-right {
+    text-align: right;
+    padding: 3% 0;
+    font-size: 15px;
+}
+
+.header-right input[type=text] {
+    padding: 8px 0 8px 8px;
+    margin: 10px 0;
+    border-radius: 3px;
+    border: none;
+    background-image: url(../img/search-icon.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 55px;
+    outline: none;
+    width: 53%;
+    min-width: 170px;
+    transition: width .6s;
+}
+
+.header-right input[type=text]:focus {
+    width: 70%;
+}
+
+/********************** Nav ***********************/
+.nav-menu {
+    border: 1px solid #5B4388;
+    border-width: 1px 1px 0;
+    background-color: #4F3A77;
+    overflow: auto;
+    width: 100%;
+}
+
+nav li {
+    list-style: none;
+    float: left;
+}
+
+/* to hide dropdown menu */
+nav li ul {
+    position: absolute;
+    border-radius: 0 0 3px 3px;
+    box-shadow: 6px 6px 6px rgba(0,0,0,0.3);
+    z-index: 1;
+    border-top: 4px solid #f27c66;
+/*    display: none;*/
+    visibility: hidden;
+    opacity: 0;
+    margin-top: 25px;
+/*    transform: rotateY(360deg);*/
+    transition: .4s;
+    overflow-y: auto;
+}
+
+nav li a {
+    display: block;
+    color: #C6BADD;
+    text-decoration: none;
+    min-width: 95px;
+    line-height: 40px;
+    padding: 5px;
+    width: auto;
+    text-align: center;
+    font-size: 14px;
+}
+
+nav li:hover a {
+    background-color: #614496;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s;
+}
+
+nav li:hover ul a {
+    background-color: #fff;
+    color: #000;
+}
+
+nav li:hover ul a:hover {
+    background-color: #f27c66;
+    color: #fff;
+}
+
+/* To make Dropdown list vertical */
+nav li ul li {
+    display: block;
+    float: none;
+}
+
+nav li ul li a {
+    padding: 0 12px;
+    min-width: 100px;
+    -webkit-transition: .2s;
+    transition: .2s;
+    text-align: center;
+}
+
+/* To make dropdown menu visible */
+nav li a:hover+.hidden,.hidden:hover {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    transform: rotateY(0);
+    margin-top: 0;
+}
+
+/* Hide CheckBox */
+nav input[type=checkbox] {
+    display: none;
+}
+
+/* Decorate Nav Buttun */
+.nav-button {
+    display: none;
+    padding: 7px;
+    text-decoration: none;
+    background-color: #614496;
+}
+
+.nav-button a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1em;
+    padding: 5px;
+}
+
+/* To make clickable nav menu */
+nav input[type=checkbox]:checked ~ #menu {
+    max-height: 800px;
+    transition: max-height .6s ease-in;
+}
+
+.active,.active a {
+    background-color: #5B4388;
+    color: #faebd7;
+}
+
+.login {
+    position: absolute;
+    border: 5px solid #5B4388;
+    border-width: 0 2px 2px;
+    z-index: 1;
+    background-color: #fff;
+    width: 250px;
+    border-radius: 0 0 4px 4px;
+    padding: 4px 10px 10px;
+/*    display: none;*/
+    visibility: hidden;
+    opacity: 0;
+    transition: .4s;
+    transform: rotate3d(1,1,0,180deg);
+    margin-left: 30px;
+    margin-top: 200px;
+}
+
+.login a {
+    padding: 0;
+    line-height: 28px;
+    height: 28px;
+    font-size: 12px;
+    text-align: left;
+    margin-left: 4px;
+}
+
+.login:hover a:hover {
+    color: red;
+}
+
+.login input:not(.login-btn) {
+    display: block;
+    width: 100%;
+    padding: 4px 8px;
+    margin: 8px 0 3px;
+    line-height: 27px;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid darkgrey;
+}
+
+nav li:hover a+.login a {
+    background-color: #fff;
+    color: #4F3A77;
+}
+
+nav li a:hover+.login,.login:hover {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    transform: rotate3d(0,0,0,0);
+    margin-left: -70px;
+    margin-top: 0;
+}
+
+.login input:hover {
+    border: 1px solid #87ceeb;
+}
+
+.login input:focus {
+    border: 1px solid #639;
+    -webkit-transition: border .5s;
+    transition: border .5s;
+}
+
+.login input[type=submit] {
+    padding: 9px;
+    font-size: 1.1em;
+    width: 100%;
+    cursor: pointer;
+    background-color: #5B4388;
+    color: #fff;
+    display: block;
+    border-radius: 4px;
+    -webkit-transition: background-color .3s;
+    transition: background-color .3s;
+    border: 1px solid #5B4388;
+}
+
+.login input[type=submit]:hover {
+    color: #5B4388;
+    background-color: #fff;
+    border: 1px solid;
+}
+
+/* Ending NavBar */
+/******************** Section CSS ********************/
+.login-error {
+    background-color: #fff;
+    padding: 10px;
+    transition: all .5s ease-in-out;
+    margin: 3px 0;
+}
+
+/********************** footer ***********************/
+footer {
+    padding: 0;
+    margin: 0;
+}
+
+.footer {
+    padding: 2% 0;
+}

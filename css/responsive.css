@@ -1,0 +1,259 @@
+/* GO FULL WIDTH BELOW 581 PIXELS */
+@media screen and (max-width: 581px) {
+    .col-3,.col-2,.col-1,.col-4,.col-5 {
+        margin-bottom: 1% 0;
+        width: 100%;
+        float: right;
+    }
+
+    .container {
+        width: 97%;
+        margin: 0 auto;
+    }
+
+    .flex-col {
+        display: block;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    .header-right,.header-left,.home {
+        text-align: center;
+    }
+    
+    /* Nav Menu */
+    nav ul {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    nav li ul {
+        position: relative;
+        top: 0;
+        left: 0;
+        display: none;
+        visibility: visible;
+    }
+
+    nav ul li,nav li a {
+        width: 100%;
+    }
+
+    .nav-button {
+        display: block;
+    }
+
+    .nav-menu {
+        overflow: hidden;
+    }
+
+    #menu {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height .5s ease;
+    }
+
+    .login {
+        position: static;
+        display: none;
+        visibility: visible;
+        border: 5px solid #5B4388;
+        margin: 0;
+        width: 100%;
+        padding: 1.7%;
+    }
+
+    nav li a:hover+.login,.login:hover {
+        margin-left: 0;
+        display: block;
+    }
+
+    .login input[type=text],.login input[type=password] {
+        width: 100%;
+        margin: 6px 0 0 1px;
+    }
+
+        @keyframes login-left {
+        from {
+            margin-left: -360px;
+            opacity: 0;
+        }
+    }
+
+    /* /nav */
+    .course-list ul {
+        text-align: left;
+    }
+
+    .reg-heading li {
+        line-height: 45px;
+        display: block;
+        font-size: 16px;
+    }
+    .reg label {
+        font-size: 14px;
+    }
+
+    .reg input:hover,.login input:hover,.contact-form input[type='text']:hover,.contact-form textarea:hover {
+        border: 1px solid #639;
+        transition: .8s;
+    }
+
+    .attend-form form input,.attend-form form select,.attend-save {
+        margin-bottom: 20px;
+        padding: 10px;
+        width: 90%;
+    }
+
+    .stu-details table {
+        width: 100%;
+    }
+    .footer-right {
+        display: none;
+    }
+}
+
+/**********************************************************/
+@media screen and (min-width: 582px) and (max-width: 769px) {
+    .col-3,.col-2,.col-1,.col-4,.col-5 {
+        margin-bottom: 1% 0;
+        width: 100%;
+        float: right;
+    }
+
+    .container {
+        width: 97%;
+        margin: 0 auto;
+    }
+
+    .flex-col {
+        display: block;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    .header-right,.header-left,.home {
+        text-align: center;
+    }
+    
+    /* Nav Menu */
+    nav ul {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    nav li ul {
+        position: relative;
+        top: 0;
+        left: 0;
+        display: none;
+        visibility: visible;
+    }
+
+    nav ul li,nav li a {
+        width: 100%;
+    }
+
+    .nav-button {
+        display: block;
+    }
+
+    .nav-menu {
+        overflow: hidden;
+    }
+
+    #menu {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height .5s ease;
+    }
+
+    .login {
+        position: static;
+        display: none;
+        visibility: visible;
+        border: 5px solid #5B4388;
+        margin: 0;
+        width: 100%;
+        padding: 1.7%;
+    }
+
+    nav li a:hover+.login,.login:hover {
+        margin-left: 0;
+        display: block;
+    }
+
+    .login input[type=text],.login input[type=password] {
+        width: 100%;
+        margin: 6px 0 0 1px;
+    }
+
+        @keyframes login-left {
+        from {
+            margin-left: -360px;
+            opacity: 0;
+        }
+    }
+
+    /* /nav */
+    .course-list ul {
+        text-align: left;
+    }
+
+    .reg-heading li {
+        line-height: 40px;
+        display: block;
+    }
+
+    .footer-right {
+        display: none;
+    }
+
+    .reg input:hover,.login input:hover,.contact-form input[type='text']:hover,.contact-form textarea:hover {
+        border: 1px solid #639;
+        transition: .8s;
+    }
+
+    .attend-form form input,.attend-form form select,.attend-save {
+        margin-bottom: 20px;
+        padding: 10px;
+        width: 90%;
+    }
+
+    .stu-details table {
+        width: 100%;
+    }
+}
+
+/*********************************************************************/
+@media screen and (min-width: 770px) and (max-width: 1170px) {
+    .container {
+        width: 1000px;
+    }
+    .news {
+        margin-bottom: 7px !important;
+    }
+    .professors p {
+        line-height: 21px;
+    }
+    .prof-thumb {
+        margin-right: 5px !important;
+    }
+    .course-name{
+        width: 144px !important;
+        padding-bottom: 2px !important;
+        margin: 5px !important;
+    }
+    .course-name {
+        font-size: 15px;
+    }
+    .campus img{
+        width: 81px;
+    }
+}

@@ -1,0 +1,130 @@
+.show_nav{
+    margin-left: 0;
+    visibility: visible;
+}
+/*  Side Nav Css */
+nav {
+    background-color: #2b303a;
+    position: fixed;
+    height: 100%;
+    width: 250px;
+    overflow-y: auto;
+}
+.logo {
+    height: 125px;
+    line-height: 125px;
+    text-align: center;
+    border-bottom: 1px solid #1b222e;
+    box-sizing: border-box;
+}
+.logo a {
+    text-decoration: none;
+    color: #999;
+    font-size: 14px;
+    padding: 10px;
+    box-shadow: 0 0 5px #999;
+    overflow: auto;
+}
+.close-nav-btn{
+    position: absolute;
+    z-index: 2;
+    top: 5px;
+    right: 10px;
+    border:none;
+    background-color: inherit;
+    color: #999;
+    outline: none;
+    display: none;
+}
+.close-nav-btn::after {
+    content: '\2716';
+    clear: both;
+    font-size: 13px;
+    font-size: 24px;
+}
+.close-nav-btn:hover {
+    color: #111;
+    font-weight: 700;
+    cursor: pointer;
+}
+.side-nav ul li {
+    border-bottom: 1px solid #1b222e;
+    width: 100%;
+}
+
+.side-nav ul li a {
+    padding: 10px 15px;
+    display: inline-block;
+    font-size: 13px;
+    width: 100%;
+    color: #999;
+    text-decoration: none;
+    line-height: 30px;
+    box-sizing: border-box;
+    position: relative;
+    cursor: pointer;
+    border-left: 5px solid transparent;
+}
+
+.side-nav ul li a:hover,
+.active {
+    color: #efefef !important;
+    background-color: #1b222d;
+}
+
+.side-nav ul li a:hover {
+    border-left: 5px solid #e43f3f !important;
+}
+
+.side-nav li ul li {
+    border-bottom: none;
+    margin-top: 1px;
+}
+
+.side-nav li ul a {
+    padding-left: 35px;
+    background-color: #1b222d;
+    line-height: 25px;
+    font-size: 12px;
+    max-width: 250px;
+}
+
+.dropdown {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .4s ease-in;
+}
+
+.show_dd {
+    max-height: 250px;
+    animation: LtoR .4s ease;
+}
+@keyframes LtoR {
+    from {
+        margin-left: -300px;
+        opacity: 0;
+    }
+}
+
+.hide_dd {
+    animation: RtoL .4s ease-out;
+}
+@keyframes RtoL {
+    from {}
+    to {
+        opacity: 1;
+        margin-left: -300px;
+    }
+}
+.icon-arrow {
+    position: absolute;
+    right: 10px;
+    font-style: normal;
+}
+.icon-arrow::after {
+    content: '\25BE';
+}
+
+.page-content {
+    margin-left: 250px;
+}

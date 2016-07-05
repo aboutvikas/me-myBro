@@ -1,0 +1,123 @@
+.attend-form,.attend-heading,.stu-details {
+    background-color: #fff;
+    padding:20px 10px;
+    border: 1px solid #ededed;
+    text-align: center;
+}
+.attend-form {
+    text-align: center;
+}
+.attend-form form{
+    width: 300px;
+    margin: 0 auto;
+}
+.attend-form h3,.stu-details h3{
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.attend-form .error {
+    margin-bottom: 15px;
+}
+.attend-form .error::before {
+    margin-right: -8px;
+}
+.attend-form .close-btn {
+    margin-top: -11px;
+    margin-right: -2px;
+}
+.attend-form form input,.attend-form form select {
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #333;
+    border-radius: 2px;
+    color: #111;
+}
+
+.attend-form ::-webkit-input-placeholder {
+    color: #111;
+}
+
+.attend-form form input:focus,.attend-form form select:focus {
+    color: #000;
+    outline: none;
+    border: 1px solid #2b303a;
+}
+
+.attend-form input[type="submit"] {
+    background-color: #2b303a;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.1em;
+    border-radius: 3px;
+    margin: 0;
+    transition: .3s;
+}
+.attend-form input[type=submit]:hover {
+    background-color: #fff;
+    color: #2b303a;
+    border: 1px solid #2b303a;
+}
+.stu-details {
+    text-align: center;
+    overflow: auto;
+}
+.stu-details table {
+    border: 1px solid #111;
+    width: 90%;
+    border-spacing: 0;
+    border-radius: 3px;
+}
+.stu-details table th {
+    padding: 15px 5px;
+    white-space: nowrap;
+    background-color: #2b303a;
+    color: #fff;
+    font-size: 14px;
+}
+.stu-details td {
+    padding: 10px 5px;
+    text-align: center;
+    font-size: 14px;
+}
+.stu-details tr {
+    border-bottom: 1px solid #ddd;
+    margin: 0;
+    transition: .3s;
+    border-radius: 3px;
+}
+.stu-details tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+.stu-details tr:hover {
+    background-color: #009688;
+    color: #fff;
+    transition: .3s;
+}
+.attend-save input[type="number"] {
+    border: 1px solid #555;
+    border-radius: 2px;
+    text-align: center;
+    padding: 8px 2px;
+    width: 90px;
+}
+.attend-save input[type="submit"] {
+    background-color: #2b303a;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    border-radius: 3px;
+    margin-top: 20px;
+    padding: 15px 30px;
+    transition: .3s;
+    width: 30%;
+    border: 1px solid #443266;
+}
+.attend-save input[type=submit]:hover {
+    width: 90%;
+    color: #afafaf;
+}

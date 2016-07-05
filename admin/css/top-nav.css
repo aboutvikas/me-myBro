@@ -1,0 +1,136 @@
+/* Top Nav CSS */
+.top-nav {
+    background-color: #fff;
+    width: 100%;
+    border-bottom: 1px solid #ededed;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.top-nav::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.user-search {
+    float: left;
+    line-height: 55px;
+    width: 50%;
+    margin-left: 20px;
+    display: inline-block;
+}
+.user-search::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.user-search input {
+    padding:10px;
+    border-radius: 2px;
+    outline: none;
+    font-size: 16px;
+    border: 1px solid transparent;
+    width: 50%;
+    border: 1px solid #efefef;
+    background-color: transparent;
+    transition: width .6s,border .6s;
+    padding-right: 40px;
+}
+.user-search input:focus {
+    border-color: #111;
+    width: 100%;
+    background-color: #fff;
+    background-image: url(../img/search-icon.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 55px;
+}
+.menu-icon{
+    display: none;
+}
+.user {
+    border-left: 1px solid #ddd;
+    display: block;
+    float: right;
+    padding: 0 10px;
+    color: #333;
+    min-width: 200px;
+    width: auto;
+    white-space: nowrap;
+}
+.user:hover {
+    background-color: #f4f4f4;
+    color: #333;
+}
+.user-info {
+    text-align: right;
+    line-height: 20px;
+    float: left;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 12px;
+}
+.user-info::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.user-email {
+    font-size: 11px;
+    display: block;
+}
+.user-thumb{
+    margin-left: 10px;
+    margin-top: 6px;
+    border-radius: 50%;
+    width: 46px;
+    height: 46px;
+    border: 1px solid #999;
+    overflow: hidden;
+    display: inline-block;
+}
+.user-thumb img {
+    object-fit: cover;
+}
+.user-dropdown {
+    position: absolute;
+    z-index: 1;
+    width: auto;
+    min-width: 198px;
+    max-width: 199px;
+    margin-left: -10px;
+    border: solid #efefef;
+    border-width: 0 1px 1px 1px;
+    border-radius: 0 0 3px 3px;
+    background-color: #efefef;
+    box-shadow: 0 1px 1px  #999;
+    display: none;
+    animation:dropdown .4s;
+}
+@keyframes dropdown {
+    from {margin-top: 20px;opacity: 0; }
+}
+.user-dropdown li {
+    display: block;
+    list-style-type: none;
+    border-left: 5px solid transparent;
+    background-color: #fff;
+}
+.user-dropdown li:hover {
+    border-left-color: #2b303a;
+}
+.user-dropdown li a{
+    padding:0 20px;
+    display: block;
+    line-height: 42px;
+    white-space: nowrap;
+    color: #333;
+    font-size: 13px;
+    margin-top: 1px;
+}
+.user-dropdown li a:hover {
+    background-color: #efefef;
+}
+
+.user:hover .user-dropdown,.user-dropdown:hover{
+    display: block;
+}

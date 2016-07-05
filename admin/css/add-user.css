@@ -1,0 +1,59 @@
+.add-user{
+    background-color: #fff;
+    padding:10px 20px;
+    margin-bottom: 10px;
+    border: 1px solid #ededed;
+    text-align: center;
+    height: calc(100vh - 50px);
+}
+
+.add-user form{
+    width: 300px;
+    margin: 0 auto;
+}
+.add-user select{
+    color: #555;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.add-user input:focus,
+.add-user select:focus{
+    color: #009688;
+}
+.add-user input[type=submit]{
+    background-color: #2b303a;
+    color: #fff;
+    width: 100%;
+    border: 1px solid #2b303a;
+    cursor: pointer;
+    border-radius: 3px;
+    margin: 0;
+    font-size: 14px;
+    padding: 13px 0;
+    transition: .3s;
+}
+.add-user input[type=submit]:hover{
+    background-color: white;
+    color: #2b303a;
+    border: 1px solid #2b303a;
+}
+.add-user .fa{
+    margin: 0;
+    min-width: 14px;
+}
+.add-user input[type="file" i] {
+    width: 190px;
+    margin-left: 6px;
+    margin-top: 8px;
+    overflow: hidden;
+    height: 30px;
+}
+.add-user .choose-file{
+    display: table-cell;
+    vertical-align: middle;
+}
+.add-user .error,.add-user .success{
+    margin-bottom: 15px;
+    font-size: 12px;
+}

@@ -1,0 +1,55 @@
+.gal-img {
+    animation: fade 1.5s;
+}
+
+@keyframes fade {
+    from {
+    /*         margin-top:-300px;*/
+    /*         transform: scale(.5);*/
+        opacity: .4;
+    }
+}
+
+nav li ul {
+    animation-name: top;
+    animation-duration: .3s;
+    animation-timing-function: linear;
+/*
+     height: 0;
+     transition: height 1s;
+*/
+}
+
+@keyframes top {
+    from {
+        margin-top: -15px;
+        transform: rotateY(180deg);
+        opacity: 0;
+    }
+}
+
+.login {
+    animation-name: login-left;
+    animation-duration: .3s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes login-left {
+    from {
+        margin-top: 110px;
+        margin-left: 30px;
+        transform: rotate3d(1,1,0,180deg);
+        opacity: 0;
+    }
+}
+
+.login-error {
+    animation: down .3s linear;
+}
+
+@keyframes down {
+    from {
+    /* margin-top: -200px;*/
+        transform: scale(.5);
+    }
+}

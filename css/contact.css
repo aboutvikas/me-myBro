@@ -1,0 +1,98 @@
+/*************************  Section   *************************************/
+.heading,.address,.widget {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.heading-location {
+    text-align: center;
+    padding: 5px 0;
+}
+
+.heading-location h1 {
+    display: inline-block;
+    background-color: #443266;
+    padding: 0 50px;
+    line-height: 50px;
+    border-radius: 20px 0;
+    border: 2px solid #443266;
+    color: #fff;
+    transition: .3s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+}
+
+.heading-location h1:hover {
+    color: #443266;
+    background-color: #fff;
+    line-height: 50px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+    border: 2px solid #443266;
+}
+
+.email a {
+    text-decoration: none;
+    color: #000;
+}
+
+.email a:hover {
+    color: red;
+}
+
+.contact-form input[type='text'],
+.contact-form input[type='email'],
+.contact-form textarea {
+    width: 100%;
+    line-height: 35px;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    font-style: italic;
+    border: 1px solid #5f5f5f;
+    outline: none;
+    border-radius: 3px;
+}
+
+.contact-form input[type='text']:hover,
+.contact-form input[type='email']:hover,
+.contact-form textarea:hover {
+    border: 1px solid #87ceeb;
+    transition: .2s;
+}
+
+.contact-form input[type='text']:focus,
+.contact-form input[type='email']:focus,
+.contact-form textarea:focus {
+    border: 1px solid #639;
+    color: #639;
+    box-shadow: 0 2px 2px 2px #d3d3d3;
+    transition: .8s;
+}
+
+.contact-form input[type=submit] {
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    background-color: #fff;
+    color: #443266;
+    line-height: 25px;
+    border: 1px solid #5f5f5f;
+    font-size: 1.2em;
+    font-weight: 700;
+    border-radius: 2px;
+}
+
+.contact-form input[type=submit]:hover {
+    color: #fff;
+    background-color: #443266;
+    border: 0;
+    line-height: 27px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+}
+
+/*************************** Footer ******************************/
+footer {
+    padding: 0;
+}
+
+.footer {
+    padding: 2% 0;
+}
